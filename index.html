@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт интернет-магазин строительных материалов и инструментов для ремонта</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   
   <body>
     <header class="header">
       <div class="header-top">
         <div class="container">
-          <a class="logo"><img src="img/logo.png" width="220" height="47" alt="Магазин строительных материалов Техномарт"></a>
+          <a class="logo">Техномарт</a>
           <form action="http://echo.htmlacademy.ru" method="POST">
-              <input type="search" id="search" name="search">
+              <input type="search" id="search" name="search" placeholder="Поиск">
               <button type="submit">Поиск</button>
           </form> 
           <a href="#">Закладки</a>
@@ -24,7 +25,7 @@
         <div class="container">
           <div class="about-shop">Интернет-магазин строительных материалов и инструментов для ремонта</div>
           <address class="address">
-            <a href="#">+7 (812) 555-05-55</a>
+            <a href="tel:+7 (812) 555-05-55">+7 (812) 555-05-55</a>
             <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </address>
           <div class="user-auth">
@@ -49,12 +50,54 @@
 
     <main>
       <h1 class="visually-hidden">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+      <section class="promo">
+        <h2 class="visually-hidden">Промо предложения</h2>
+        <ul class="promo-list">
+          <li class="promo-card">
+            <p>Материалы</p>
+            <a href="#">на любой вкус</a>
+          </li>
+          <li class="promo-card">
+            <p>Инструмент</p>
+            <a href="#">на все случаи</a>
+          </li>
+          <li class="promo-card">
+            <p>Техника</p>
+            <a href="#">для стройки</a>
+          </li>
+          <li class="promo-card">
+            <p>Скидки 50%</p>
+            <a href="#">на 350 товаров</a>
+          </li>
+          <li class="promo-card">
+            <p>Доставка</p>
+            <a href="#">бесплатно</a>
+          </li>
+          <li class="slider">
+            <div class="drills">
+                <p>Дрели</p>
+                <p>Соседям на радость!</p>
+                <button type="button">Влево</button>
+                <button type="button">Вправо</button>
+                <a href="catalog.html">Открыть каталог</a>
+            </div>
+            <div class="perforators">
+                <p>Перфораторы</p>
+                <p>Настоящие мужские игрушки</p>
+                <button type="button">Влево</button>
+                <button type="button">Вправо</button>
+                <a href="catalog.html">Открыть каталог</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      
       <div class="container">
         <section class="about-us">
           <h2>КОМПАНИЯ «Техномарт»</h2>
           <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
           <p>Мы можем доставить ваш товар в самые отдаленные точки России!
-              Техномарт работает со многими транспортными компаниями: </p>
+              Техномарт работает со многими транспортными компаниями:
           </p>
           <ul>
             <li>Деловые линии</li>
@@ -69,30 +112,22 @@
           <p>Вы можете забрать товар сами,  заехав в наш офис:</p>
           <a href="#">Ссылка для карты</a>
           
-          <div class="modal-map">
-            <p>
-              <img src="img/map_big.png" width="940" height="466" alt="Офис компании по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-            </p>
-            <button type="button" class="form-close">Закрыть</button>
-          </div>  
+          <div id="map" class="map"></div>
+
           
           <a href="#" class="btn">Заблудились? Напишите НАМ!</a>
           <form class="write-us" action="http://echo.htmlacademy.ru" method="post">
-            <div class="write-us-container">
-              <div class="write-us-top">
-                <p class="fullname-field">
-                  <label for="fullname">Ваше имя</label>
-                  <input type="text" id="fullname" name="fullname" placeholder="Имя Фамилия">
-                </div>
-                <p class="email-field">
-                  <label for="email">Ваш e-mail:</label>
-                  <input type="text" id="email" name="email" placeholder="email@example.com">
-                </p>
-              </div>
-              <p class="message-field">
-                <label for="message">Текст письма:</label>
-                <textarea name="messge" id="message" rows="5" placeholder="В свободной форме"></textarea>
-              </p>
+            <div class="fullname-field">
+              <label for="fullname">Ваше имя</label>
+              <input type="text" id="fullname" name="fullname" placeholder="Имя Фамилия">
+            </div>
+            <div class="email-field">
+              <label for="email">Ваш e-mail:</label>
+              <input type="text" id="email" name="email" placeholder="email@example.com">
+            </div>
+            <div class="message-field">
+              <label for="message">Текст письма:</label>
+              <textarea name="messge" id="message" rows="5" placeholder="В свободной форме"></textarea>
             </div>
             <div class="btn-container">
               <button class="btn" type="submit">Отправить</button>
@@ -105,13 +140,13 @@
     </main>
       
     <footer class="footer">
-      <div class="top-footer">
+      <div class="footer-top">
         <div class="container">
           <div class="footer-contacts">
-            <a class="logo"><img src="img/logo.png" width="220" height="47" alt="Магазин строительных материалов Техномарт"></a>
+            <a class="logo">Техномарт</a>
             <address class="main-footer__address">
                 <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-                <a href="#">+7 (812) 555-05-55</a>
+                <a href="tel:+7 (812) 555-05-55">+7 (812) 555-05-55</a>
             </address>
           </div> 
           
@@ -153,5 +188,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
