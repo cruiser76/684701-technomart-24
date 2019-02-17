@@ -11,7 +11,7 @@
   <body>
     <header class="header">
       <div class="header-top">
-        <div class="container flex-container">
+        <div class="container header-top-flex">
           <a href="index.html" class="logo logo-ref">Техномарт</a>
           <form action="http://echo.htmlacademy.ru" method="POST">
             <input type="search" id="search" name="search" placeholder="Поиск"> 
@@ -24,7 +24,7 @@
       </div> 
 
       <div class="header-bottom">
-        <div class="container flex-container">
+        <div class="container header-bottom-flex">
           <div class="about-shop">
             Интернет-магазин строительных материалов и инструментов для ремонта
           </div>
@@ -61,13 +61,13 @@
     <main>
       <article class="catalog container">
         <h1>Перфораторы</h1>
-        <div class="breadcrumbs flex-container">
+        <div class="breadcrumbs">
           <a href="index.html">Главная</a>
           <a href="#">Каталог</a>
           <a href="#">Инструмент</a>
           <a class="current">Перфораторы</a>
         </div>
-        <div class="flex-container">
+        <div class="filters-flex">
         <section class="filters">
           <h2>Фильтр</h2>
           <form class="filters-form" action="http://echo.htmlacademy.ru" method="post">
@@ -83,23 +83,23 @@
               </legend>
               <ul class="brands-list">
                 <li class="brand-item">
-                  <input type="checkbox" name="bosch" id="bosch" checked>
+                  <input class="visually-hidden checkbox" type="checkbox" name="bosch" id="bosch" checked>
                   <label for="bosch">Bosch</label>
                 </li>
                 <li class="brand-item">
-                  <input type="checkbox" name="interscol" id="interscol">
+                  <input class="visually-hidden checkbox" type="checkbox" name="interscol" id="interscol">
                   <label for="interscol">Интерскол</label>
                 </li>
                 <li class="brand-item"> 
-                  <input type="checkbox" name="makita" id="makita" checked>
+                  <input class="visually-hidden checkbox" type="checkbox" name="makita" id="makita" checked>
                   <label for="makita">Makita</label>
                 </li>
                 <li class="brand-item">
-                  <input type="checkbox" name="dewalt" id="dewalt">
+                  <input class="visually-hidden checkbox" type="checkbox" name="dewalt" id="dewalt">
                   <label for="dewalt">Dewalt</label>
                 </li>
                 <li class="brand-item">
-                  <input type="checkbox" name="hitachi" id="hitachi">
+                  <input class="visually-hidden checkbox" type="checkbox" name="hitachi" id="hitachi">
                   <label for="hitachi">Hitachi</label>
                 </li>
               </ul> 
@@ -111,11 +111,11 @@
               </legend>
               <ul class="powertype-list">
                 <li class="powertype-item">
-                  <input type="radio" name="power" id="accumulator">
+                  <input class="visually-hidden radio" type="radio" name="power" id="accumulator" checked>
                   <label for="accumulator">Аккумуляторные</label>
                 </li>
                 <li class="powertype-item">
-                  <input type="radio" name="power" id="main-supply">
+                  <input class="visually-hidden radio" type="radio" name="power" id="main-supply">
                   <label for="main-supply">Сетевые</label>
                 </li>
               </ul>
@@ -123,20 +123,21 @@
             <button type="submit">Показать</button>
           </form>
         </section>
+        
         <section class="goods">
           <h2 class="visualy-hidden">Товары</h2>
           <div class="sort">
 
           </div>
-          <ul class="goods-list flex-container">
+          <ul class="goods-list">
             <li class="goods-item">
               <img src="img/bfg3000.png" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
               <p>Перфоратор BOSCH BFG 3000</p>
               <p class="old-price">22500 Р.</p>
               <p>15500 Р.</p>
               <div class="button-group">
-                <button type="button buy">Купить</button>
-                <button type="button bookmark">В закладки</button>
+                <button class="buy" type="button">Купить</button>
+                <button class="bookmark" type="button">В закладки</button>
               </div>
             </li>
             <li class="goods-item">
@@ -145,8 +146,8 @@
               <p class="old-price">30500 Р.</p>
               <p>25500 Р.</p>
               <div class="button-group">
-                <button type="button">Купить</button>
-                <button type="button">В закладки</button>
+                <button class="buy" type="button">Купить</button>
+                <button class="bookmark" type="button">В закладки</button>
               </div>
             </li>
             <li class="goods-item">
@@ -154,8 +155,8 @@
               <p>Перфоратор BOSCH BFG 2000</p>
               <p>12500 Р.</p>
               <div class="button-group">
-                <button type="button">Купить</button>
-                <button type="button">В закладки</button>
+                <button class="buy" type="button">Купить</button>
+                <button class="bookmark" type="button">В закладки</button>
               </div>
             </li>
             <li class="goods-item">
@@ -164,8 +165,8 @@
                 <p class="old-price">22500 Р.</p>
                 <p>15500 Р.</p>
                 <div class="button-group">
-                  <button type="button">Купить</button>
-                  <button type="button">В закладки</button>
+                  <button class="buy" type="button">Купить</button>
+                  <button class="bookmark" type="button">В закладки</button>
                 </div>
             </li>
             <li class="goods-item">
@@ -174,8 +175,8 @@
               <p class="old-price">30500 Р.</p>
               <p>25500 Р.</p>
               <div class="button-group">
-                <button type="button">Купить</button>
-                <button type="button">В закладки</button>
+                <button class="buy" type="button">Купить</button>
+                <button class="bookmark" type="button">В закладки</button>
               </div>
             </li>
             <li class="goods-item">
@@ -183,8 +184,8 @@
               <p>Перфоратор BOSCH BFG 2000</p>
               <p>12500 Р.</p>
               <div class="button-group">
-                <button type="button">Купить</button>
-                <button type="button">В закладки</button>
+                <button class="buy" type="button">Купить</button>
+                <button class="bookmark" type="button">В закладки</button>
               </div>
             </li>
             <li class="goods-item">
@@ -193,8 +194,8 @@
               <p class="old-price">22500 Р.</p>
               <p>15500 Р.</p>
               <div class="button-group">
-                <button type="button">Купить</button>
-                <button type="button">В закладки</button>
+                <button class="buy" type="button">Купить</button>
+                <button class="bookmark" type="button">В закладки</button>
               </div>
             </li>
             <li class="goods-item">
@@ -203,8 +204,8 @@
               <p class="old-price">30500 Р.</p>
               <p>25500 Р.</p>
               <div class="button-group">
-                <button type="button">Купить</button>
-                <button type="button">В закладки</button>
+                <button class="buy" type="button">Купить</button>
+                <button class="bookmark" type="button">В закладки</button>
               </div>
             </li>
             <li class="goods-item">
@@ -212,16 +213,20 @@
               <p>Перфоратор BOSCH BFG 2000</p>
               <p>12500 Р.</p>
               <div class="button-group">
-                <button type="button">Купить</button>
-                <button type="button">В закладки</button>
+                <button class="buy" type="button">Купить</button>
+                <button class="bookmark" type="button">В закладки</button>
               </div>
             </li>
           </ul>
-        </div>
-          <div class="paginator">
-          
-          </div>
         </section>
+      </div>
+          <div class="paginator">
+            <div class="paginator-item current"><a href="#">1</a></div>
+            <div class="paginator-item"><a href="#">2</a></div>
+            <div class="paginator-item"><a href="#">3</a></div>
+            <div class="paginator-item"><a href="#">Следующая</a></div>
+          </div>
+        
       </article>
 
       <form class="append-cart container" action="http://echo.htmlacademy.ru" method="post">
@@ -236,7 +241,7 @@
 
     <footer class="footer">
       <div class="footer-top">
-        <div class="container flex-container">
+        <div class="container footer-top-flex">
           <div class="footer-contacts">
             <p class="logo">Техномарт</p>
             <address class="footer-address">
@@ -246,14 +251,14 @@
           </div> 
           
           <div class="footer-navigation"> 
-            <ul class="footer-menu flex-container">
+            <ul class="footer-menu">
                 <li><a href="#">Компания</a></li>
                 <li><a href="#">Новости</a></li>
                 <li><a href="#">Каталог</a></li>
                 <li><a href="#">Доставка</a></li>
                 <li><a href="#">Контакты</a></li>
               </ul> 
-            <ul class="promo-menu flex-container">
+            <ul class="promo-menu">
               <li><a href="#">Материалы</a></li>
               <li><a href="#">Техника</a></li>
               <li><a href="#">Инструмент</a></li>
@@ -264,7 +269,7 @@
       </div>
 
       <div class="footer-bottom">
-        <div class="container flex-container">
+        <div class="container footer-bottom-flex">
           <div class="copyright">
             <p>© 2010–2019 Компания «Техномарт»</p> 
             <p>Все права защищены</p>
