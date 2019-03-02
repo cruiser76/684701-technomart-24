@@ -102,6 +102,7 @@ body {
   line-height: 24px;
   color: #000000;
   background-color: #ffffff;
+  min-width: 940px;
 }
 img { 
   max-width: 100%;
@@ -760,7 +761,7 @@ input[type="radio"].visually-hidden {
 .contacts-button-map {
   display: block;
   background-image: url("../img/map.jpg");
-  
+  background-color: #f1eee9;
   padding-bottom: 158px;
   margin-bottom: 47px;
 }
@@ -1852,6 +1853,7 @@ input[type="radio"].visually-hidden {
       align-self: center;
   width: 253px;
   text-align: center;
+  /* margin-right: 24px; */
 }
 .company-list {
   list-style: none;
@@ -1963,6 +1965,7 @@ input[type="radio"].visually-hidden {
   top: -40px;
   right: 0;
   background: url("../img/service.png") no-repeat 0% 0%;
+  
 }
 .service-item  {
   width: 100%;
@@ -2002,8 +2005,10 @@ input[type="radio"].visually-hidden {
       -ms-flex-positive: 1;
           flex-grow: 1;
   padding-left: 80px;
+  
 }
 .slider-list h3 {
+  
   text-transform: uppercase;
   margin: 0;
   font-size: 36px;
@@ -2012,11 +2017,13 @@ input[type="radio"].visually-hidden {
   margin-bottom: 24px;
   color: #32425c;
 }
+
 .slider-list .slider-active {
   display: block;
 }
 .slider-item {
   display: none;
+  
 }
 .slider-item p {
   font-family: "Pt sans", "Tahoma", sans-serif;

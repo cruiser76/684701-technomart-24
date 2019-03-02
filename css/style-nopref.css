@@ -48,6 +48,7 @@ body {
   line-height: 24px;
   color: #000000;
   background-color: #ffffff;
+  min-width: 940px;
 }
 img { 
   max-width: 100%;
@@ -671,7 +672,7 @@ input[type="radio"].visually-hidden {
 .contacts-button-map {
   display: block;
   background-image: url("../img/map.jpg");
-  
+  background-color: #f1eee9;
   padding-bottom: 158px;
   margin-bottom: 47px;
 }
@@ -1485,7 +1486,7 @@ input[type="radio"].visually-hidden {
   height: 70px;
   top: 52px;
   left: -93px;
-  background: url("../img/form-done.svg") no-repeat 50% 50%;;
+  background: url("../img/form-done.svg") no-repeat 50% 50%;
 }
 
 .append-cart-footer {
